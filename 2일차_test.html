@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td{
+            margin : 100px auto;
+            border : 1px solid black;
+        }
+        th,td{
+            padding: 10px;
+            /* text-align: center; - 가운데 정렬 */
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>시간표</h2>
+    <table>
+        <tr>
+            <th></th>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+        </tr>
+        <tr>
+            <!-- rowspan : 세로병합 -->
+            <td>18:00 ~ 19:00</td>
+            <td rowspan="3">요가</td>
+            <td rowspan="2">다이어트 복싱</td>
+            <td>요가</td>
+            <td rowspan="4">필라테스</td>
+            <td rowspan="2">다이어트 복싱</td>
+        </tr>
+        <tr>
+            <td>19:00 ~ 20:00</td>
+            <td>필라테스</td>
+            <!-- <td>필라테스</td> -->
+            <!-- <td>다이어트 복싱</td> -->
+        </tr>
+        <tr>
+            <td>20:00 ~ 21:00</td>
+            <td>요가</td>
+            <td>요가</td>
+            <!-- <td>필라테스</td> -->
+            <td rowspan="2">필라테스</td>
+        </tr>
+        <tr>
+            <!-- colspan : 가로병합 -->
+            <td>21:00 ~ 22:00</td>
+            <td>필라테스</td>
+            <td>필라테스</td>
+            <!-- <td>필라테스</td> -->
+            <td>필라테스</td>
+            <!-- <td>필라테스</td> -->
+        </tr>
+    </table> 
+</body>
+</html>

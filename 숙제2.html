@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 1200px;
+        height: 500px;
+        background-color: gray;
+        margin: 50px auto;
+        display: flex;
+      }
+      .box {
+        flex: 1;
+      }
+      .box:nth-child(1) {
+        background-color: indigo;
+        width: 290px;
+        height: 490px;
+      }
+      .box:nth-child(2) {
+        background-color: indigo;
+        width: 290px;
+        height: 490px;
+        margin-right: 110px;
+        margin-left: 110px;
+      }
+      .box:nth-child(3) {
+        background-color: indigo;
+        width: 290px;
+        height: 490px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
